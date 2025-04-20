@@ -1,4 +1,4 @@
-# ProductCrudApp - An application which includes crud for both products and categories
+# ProductCrudApp - An application which includes crud for both products and categories using Dot Net Core 
 
 # Folder Structure
 - Properties
