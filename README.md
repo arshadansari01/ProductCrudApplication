@@ -34,7 +34,7 @@
 
 # Prerequisites
 
-1) .NET SDK (7) - > As per the Assignment criteria
+1) .NET SDK (8) 
 
 2) SQL Server (or any compatible database)
 
