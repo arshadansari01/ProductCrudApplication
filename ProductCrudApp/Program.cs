@@ -23,8 +23,8 @@ var mySqlConnectionStr = builder.Configuration.GetConnectionString("DefaultConne
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
 
-builder.Services.AddTransient<ICategoryRepository, CategoryRepositoryImpl>();
-builder.Services.AddTransient<IProductRepository, ProductRepositoryImpl>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepositoryImpl>();
+builder.Services.AddScoped<IProductRepository, ProductRepositoryImpl>();
 builder.Services.AddScoped<ICategoryService, CategoryServiceImpl>();
 builder.Services.AddScoped<IProductService, ProductServiceImpl>();
 
